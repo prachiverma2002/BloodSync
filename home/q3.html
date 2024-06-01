@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Q4</title>
+    <style type="text/css">
+        div {
+            font-weight: bolder;
+        }
+    </style>
+    <script>
+        function print() {
+            document.getElementById("pascal").innerHTML = "";
+            var rows = document.getElementById("numRows").value;
+            var arr = generate(+rows);
+            for (var i = 0; i < arr.length; i++) {
+                var div = document.createElement('div');
+                div.className = "divblock"
+                for (var j = 0; j < arr[i].length; j++) {
+                    var span = document.createElement('span');
+                    span.innerHTML = arr[i][j];
+                    span.className = "block";
+                    div.appendChild(span);
+                }
+                document.getElementById("pascal").appendChild(div);
+            }
+        }
+        function generate(n) {
+            var arr = [];
+            var tmp;
+            for (var i = n; i > 0; i--) {
+                arr[n - i] = [];
+                for (var j = 0; j < i; j++) {
+                    arr[n - i].push(i);
+                }
+            }
+            return arr;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <h1><u>Web Tech Assignment</u></h1>
+            <hr>
+        </center><br><br>
+        <h3>Enter the no. </h3>
+        <input type="text" placeholder="Enter number of rows for pascal Triangle" style="width:80%" id="numRows">
+        <input type="button" value="Generate" name="Go " onClick="print() "><br><br>
+        <div id="pascal"></div>
+    </div>
+</body>
+
+</html>

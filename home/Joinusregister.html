@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Join Us As A Receiver</title>
+    <link rel="stylesheet" type="text/css" href="joinusregister.css">
+    <link rel="stylesheet" type="text/css" href="homestyle.css">
+    <script type="text/javascript" defer src="formvalidation.js"></script>
+</head>
+
+<body>
+    <div class="topnav" id="topnav">
+        <h1>BloodSync</h1>
+        <a href="login.html">Admin login</a>
+        <a href="contactus.html">Helpline</a>
+        <a href="joinusregister.html">Become a Receiver</a>
+        <a href="Joinusdonor.html">Become a Donor</a>
+        <a href="about.html">About Us</a>
+        <a href="../home.html">Home</a>
+    </div>
+    <form id="form" action="receiver.html" method="post">
+        <div class="container">
+            <div align="center">
+                <img src="../static/register.png" class="img img-responsive">
+            </div>
+            <div>
+                <center>
+                    <h3>
+                        Join our community today and extend your hand to those in need. By registering below, you're
+                        making a commitment to donate and offer assistance whenever it's required. Together, we can make
+                        a meaningful difference in the lives of others. Fill out the form below and be part of something
+                        truly impactful.</h3>
+                </center>
+            </div>
+
+            <center>
+                <h1>Register as a blood receiver</h1>
+            </center>
+            <hr>
+            <br>
+            <div id="error"> </div>
+            <br>
+            <hr>
+            <label> Name </label>
+            <input type="text" id="firstname" name="firstname" placeholder="Firstname" size="15" required>
+            <input type="text" name="middlename" placeholder="Middlename" size="15">
+            <input type="text" name="lastname" placeholder="Lastname" size="15" required>
+
+            <div>
+                <label>D.O.B</label>
+                <input type="date" name="dob" placeholder="dob" size="15" required>
+            </div>
+
+            <div>
+                <label>Email</label>
+                <input type="email" id="email" name="email" placeholder="email" size="15" required>
+            </div>
+
+            <div>
+                <label>Gender</label>
+                <input type="radio" name="gender" value="male" required>male
+                <input type="radio" name="gender" value="female" required>female
+                <input type="radio" value="Other" name="gender" required> Other
+            </div>
+
+            <div>
+                <label>Blood Group</label>
+                <div>
+                    <select>
+                        <option value="O+" required>O+</option>
+                        <option value="O-" required>O-</option>
+                        <option value="A+" required>A+</option>
+                        <option value="A-" required>A-</option>
+                        <option value="B+" required>B+</option>
+                        <option value="B-" required>B-</option>
+                        <option value="AB+" requird>AB+</option>
+                        <option value="AB-" required>AB-</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label>Address</label>
+                <div>
+                    <textarea minlength="5" placeholder="Please fill out your complete address." rows="6" name="address"
+                        required>
+				</textarea>
+                </div>
+            </div>
+
+            <div>
+                <label>City</label>
+                <input type="city" name="city" placeholder="cityname" required>
+            </div>
+
+            <div>
+                <label>Mobile no.</label>
+                <input type="text" name="mno" id="mno" placeholder="enter your 10 digit mobile no." required>
+            </div>
+
+            <div>
+                <button type="submit" name="registerbtn" class="registerbtn">Join</button>
+                <button type="reset" class="resetbtn">reset</button>
+
+            </div>
+            <br>
+
+        </div>
+    </form>
+
+
+</body>
+
+</html>

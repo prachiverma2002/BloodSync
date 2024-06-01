@@ -1,0 +1,60 @@
+body{
+    font-family: Calibri, Helvetica, sans-serif;
+  }
+  .container {
+      
+      padding: 80px;
+    background-color: lightblue;
+  }
+   div {
+         padding: 10px 0;
+   }
+  hr {
+  
+    border: 2px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  .registerbtn {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .registerbtn:hover {background-color: #3e8e41}
+  
+  /*.registerbtn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }*/
+  .resetbtn {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .resetbtn:hover {background-color: #cc5500}
+  
+  .resetbtn:active {
+    background-color: orange;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }

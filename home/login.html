@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>login page</title>
+    <link rel="stylesheet" type="text/css" href="homestyle.css">
+    <script type="text/javascript" defer src="login.js"></script>
+    <style>
+        form {
+            margin-top: 5%;
+            margin-left: 20%;
+            margin-right: 20%;
+            border: 3px solid #f1f1f1;
+        }
+
+        input[type=text],
+        input[type=password] {
+
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            margin: 8px 0;
+            margin-left: 50%;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+
+        .lab {
+            margin-left: 25%;
+        }
+
+        img.avatar {
+            width: 20%;
+            border-radius: 20%;
+        }
+
+        .container {
+            margin-left: 30%;
+            margin-right: 30%;
+            padding: 10px;
+            width: 30%;
+
+        }
+
+        .linker {
+            margin-left: 40%;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav" id="topnav">
+        <h1>BloodSync</h1>
+        <a href="login.html">Admin login</a>
+        <a href="contactus.html">Helpline</a>
+        <a href="Joinusregister.html">Become a Receiver</a>
+        <a href="joinusdonor.html">Become a Donor</a>
+        <a href="about.html">About Us</a>
+        <a href="../home.html">Home</a>
+    </div>
+    <form action="admin.html" method="post">
+        <div class="imgcontainer">
+            <img src="../static/log.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="un" id="un"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="un" id="un" required>
+            <label for="pw" id="pw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="pw" id="pw" required>
+            <a href="admin.html"><button type="submit" name="registerbtn" class="registerbtn">Login</button></a>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+            <input type="reset" class="resetbtn" name="resetbtn">
+
+        </div>
+    </form>
+</body>
+
+</html>
